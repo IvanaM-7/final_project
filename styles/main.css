@@ -35,9 +35,9 @@ a {
 header {              
     grid-column: 1 / 13;
 	grid-row: 1 / 2;                         
-    background: linear-gradient(white, blue);
-    background-color: steelblue;
-    border-bottom: 3px solid blue;
+    background: linear-gradient(rgb(28, 50, 146), white);
+    /*background-color: steelblue;*/
+    border-bottom: 3px solid rgb(28, 50, 146);
     padding: 2.2%;
 }
 
