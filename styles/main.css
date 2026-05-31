@@ -263,7 +263,7 @@ aside img {vertical-align: middle;
 footer {
     grid-column: 1 / 4;
 	grid-row: 4 / 5;
-    background-color: darkgreen;
+    background: linear-gradient(rgb(28, 50, 146), white);
     color: white;
     text-align: center;
     padding: 1.6%;;
