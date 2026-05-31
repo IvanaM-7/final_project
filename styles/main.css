@@ -30,9 +30,9 @@ a {
 header {              
     grid-column: 1 / 13;
 	grid-row: 1 / 2;                         
-    background: linear-gradient(white, lightsteelblue);
+    background: linear-gradient(white, blue);
     background-color: steelblue;
-    border-bottom: 3px solid steelblue;
+    border-bottom: 3px solid blue;
     padding: 2.2%;
 }
 
@@ -88,7 +88,7 @@ nav {
 	position: absolute;
 	left: 0;
 	display: none;
-	background-color: steelblue;
+	background-color: blue;
 }
 #checkbox-toggle { display: none; }
 
@@ -176,7 +176,7 @@ h2 {
     margin: .5em 0 .5em 0;
 }
 
-h3 {color: #800000;
+h3 {color: blueviolet;
 margin: 2px 0 0.5px 0;
 }
 
@@ -258,7 +258,7 @@ aside img {vertical-align: middle;
 footer {
     grid-column: 1 / 4;
 	grid-row: 4 / 5;
-    background-color: steelblue;
+    background-color: darkgreen;
     color: white;
     text-align: center;
     padding: 1.6%;;
