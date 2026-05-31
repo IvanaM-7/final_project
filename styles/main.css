@@ -88,7 +88,7 @@ nav {
 	position: absolute;
 	left: 0;
 	display: none;
-	background-color: blue;
+	background-color: rgb(28, 50, 146);
 }
 #checkbox-toggle { display: none; }
 
@@ -123,7 +123,7 @@ color: white;}
 	position: absolute;
 	top: 0;
 	left: 100%;
-	background-color: steelblue;
+	background-color: rgb(28, 50, 146);
 	width: 150%;
 	display: none;
 }
