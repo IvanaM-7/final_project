@@ -29,4 +29,5 @@ table {
 		tr:nth-child(6) td:first-child,
 		tr:nth-child(11) td:first-child,
 		tr:nth-child(16) td:first-child {vertical-align: center;
-		        font-weight: bold;}									
+		        font-weight: bold;
+			background-color: rgb(128, 190, 226);}									
