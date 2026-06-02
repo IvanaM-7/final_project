@@ -1,0 +1,34 @@
+table {
+    	width: 100%;
+		border-collapse: collapse;
+		border: 2.5px solid black;
+		}
+		caption { font-weight: bold;
+			font-weight: bold;
+			text-align: center;
+		    font-size: 140%;
+			margin-top: 0.5em;
+	        padding-bottom: .3em;
+			color: rgb(247, 5, 174);}
+			
+		thead {
+			background-color: rgb(28, 50, 146);}
+
+				/*Thead color font*/
+	thead th {
+		color: white;}
+
+		th, td {
+			border: none;
+			padding: .35em 1em .35em .5em;
+			text-align: left;
+			vertical-align: middle;
+		}
+		tr:first-child td:first-child,
+		tr:nth-child(6) td:first-child,
+		/*tr:nth-child(7) td:first-child,
+		tr:nth-child(10) td:first-child,
+		tr:nth-child(14) td:first-child,
+		tr:nth-child(16) td:first-child,
+		tr:nth-child(19) td:first-child*/ {vertical-align: top;
+		        font-weight: bold;}									
