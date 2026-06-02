@@ -27,9 +27,6 @@ table {
 		}  
 		tr:first-child td:first-child,
 		tr:nth-child(6) td:first-child,
-		/*tr:nth-child(7) td:first-child,
-		tr:nth-child(10) td:first-child,
-		tr:nth-child(14) td:first-child,
-		tr:nth-child(16) td:first-child,
-		tr:nth-child(19) td:first-child*/ {vertical-align: top;
+		tr:nth-child(11) td:first-child,
+		tr:nth-child(16) td:first-child {vertical-align: center;
 		        font-weight: bold;}									
