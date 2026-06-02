@@ -21,6 +21,7 @@ table {
         th, td {
 			border-bottom: 1px solid black;
 			border-top: 1px solid black;
+			border-left: 1px solid black;
 			padding: .35em 1em .35em .5em;
 			text-align: left;
 			vertical-align: middle;
@@ -30,4 +31,5 @@ table {
 		tr:nth-child(11) td:first-child,
 		tr:nth-child(16) td:first-child {vertical-align: center;
 		        font-weight: bold;
-			background-color: rgb(128, 190, 226);}									
+				background-color: rgb(128, 190, 226);
+				border-left: none;}									
