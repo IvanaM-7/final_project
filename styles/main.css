@@ -167,7 +167,7 @@ section {
 	}
 
 	& a {
-		color: #800000;
+		color: rgb(247, 5, 174);
 		font-weight: bold;
         text-decoration: underline;
 	}
@@ -228,7 +228,7 @@ aside {
 }
 
 & aside h2 {
-    color: #800000;
+    color: rgb(247, 5, 174);
     margin: 1px 0 10px 5px;
     text-align: left;
     }
@@ -245,12 +245,12 @@ aside {
     
 aside a:link,
 aside a:visited {
-    color: #4682b4;   
+    color: #f500d4b2;   
     text-decoration: underline;
     }
 aside a:hover,
 aside a:focus {
-    color: #800000;
+    color: rgb(247, 5, 174);
     text-decoration: underline;
     }
 
