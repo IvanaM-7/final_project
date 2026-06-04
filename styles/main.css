@@ -38,9 +38,7 @@ a {
 
 /* Header */
 header {                            
-    grid-area: header;
-   /* grid-column: 1 / 13;
-	grid-row: 1 / 2;    */                     
+    grid-area: header;                  
     background: linear-gradient(rgb(28, 50, 146), white);
     border-bottom: 3px solid rgb(28, 50, 146);
     padding: 2.2%;
@@ -52,7 +50,6 @@ header img {
 }
 
 header h1 {
-  /*  font-style: italic;*/
     color:white;
     font-size: 200%;
     padding: 0;
@@ -76,8 +73,6 @@ blockquote{
 /* the styles for the nav*/
 nav {
     grid-area: navbar;
-   /* grid-column: 1 / 13;
-	grid-row: 2 / 3;  */
     position: relative;
 	background-color: rgb(28, 50, 146);
 	width: 100%;
@@ -153,15 +148,11 @@ a.current {
 /* Main */
 main {
     padding: 0 1em 0 1em;
-   /* display: flex;
-    flex-direction: column;*/
 }
 
 /* section links */
 section {
     grid-area: section;
-    /*grid-column: 4 / 10;
-	grid-row: 2 / 3;*/
     width: 100%;
     margin: 0.5em;
     line-height: 1.5;
@@ -174,7 +165,7 @@ section {
 	}
 
 	& a {
-		color: rgb(247, 5, 174);
+		color: rgb(223, 8, 158);
 		font-weight: bold;
         text-decoration: underline;
 	}
@@ -201,7 +192,17 @@ section h3 {
     clear: left;
 }
 
-/*Article */
+img {
+    img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    clear: left;
+}
+}
 
 figure {
     float: left;
@@ -223,9 +224,6 @@ figure figcaption {
 
 /* Aside */
 aside {
-    /*flex-basis: 25%;
-    grid-column: 1 / 4;
-	grid-row: 3 / 4;*/
     grid-area: aside;
     width: 100%;
     margin: 25px 0 0 0;
@@ -254,12 +252,12 @@ aside {
     
 aside a:link,
 aside a:visited {
-    color: #f500d4b2;   
+    color: #e100f5a8;   
     text-decoration: underline;
     }
 aside a:hover,
 aside a:focus {
-    color: rgb(247, 5, 174);
+    color: rgba(247, 5, 174, 0.774);
     text-decoration: underline;
     }
 
@@ -271,8 +269,6 @@ aside img {vertical-align: middle;
 /* footer */
 footer {
     grid-area: footer;
-    /*grid-column: 1 / 4;
-	grid-row: 4 / 5;*/
     background: linear-gradient(white, rgb(28, 50, 146));
     color: white;
     text-align: center;
@@ -280,81 +276,6 @@ footer {
     font-size: 85%;
     margin-top: 1.5em;
 }
-
-        /* form */ 
-form, select {
-    width:100%;
-}
-select {
-    font-size: inherit;
-    padding: .25em;
-    margin-bottom: .5em;
-    border-radius: 5px;
-}
-
-input[type="text"], input[type="email"] {
-    width: 100%;
-}
-
-input {
-    font-size: inherit;
-    padding: .2em;
-    margin-bottom: 1em;
-    border-radius: 5px;
-}
-
-legend {font-size: 1.2em;
-margin-bottom: 0.5em;
-font-weight: bold;
-color:#800000;}
-
-fieldset {padding: .5em 1em;
-margin-bottom: .5em;}
-
-.meal-form label {
-    display: block;
-}
-
-.required {color: red;}
-input:required:invalid {border-color: red;}
-
-textarea {
-    width: 100%;
-    padding: .2em;
-    height: 8em;
-    font-family: inherit;
-    font-size: inherit;
-    margin-bottom: .25em;
-}
-
-.meal-form input[type="radio"], .meal-form input[type="checkbox"] {
-    margin: 0 .25em 0 .75em;
-    width: auto;
-}
-
-.meal-form input[type="radio"] + label,
-.meal-form input[type="checkbox"] + label {
-    display: inline;
-    margin-right: .5em;
-}
-
-button {
-    font-size: inherit;
-    font-weight: bold;
-    color: white;
-    width: 8em;
-    border-radius: 10px;
-    margin-top: .5em;
-    padding: .5em;
-}
-
-.button-submit {background-color: #4682b4;}
-.button-reset {background-color: #800000;}
-
-.button-submit:hover {background-color: lightblue;}
-.button-reset:hover {background-color: lightsalmon;}
-
-input {border-radius: 5px;}
 
 /* Large-screen media query */
 @media screen and (min-width: 768px) {
@@ -365,30 +286,6 @@ main {
         grid-template-areas: "section aside";
         gap: 5%;
     }
-       /* grid-template-columns: repeat(12, 1fr);
-        column-gap: 2em;
-    }
-
-    section {
-        grid-column: 1 / 9;
-        grid-row: 1;
-    }
-
-    aside {
-        grid-column: 9 / 13;
-        grid-row: 1;
-}
-main {
-flex-direction: row;
-}
-
-section {
-flex-basis: 70%;
-}
-
-aside {
-    flex-basis: 30%;
-    }*/
 }
 
     /* Large-screen media query */
