@@ -178,6 +178,7 @@ section {
 section h2 {
     color:rgb(247, 5, 174);
     margin: .5em 0 .5em 0;
+    clear: left;
 }
 
 h3 {color: blueviolet;
@@ -197,10 +198,6 @@ img {
      float: left;
     margin: .25em .5em 1em 0;
     width: clamp(150px, 100%, 1300px);
-}
-
-h2, h3 {
-    clear: left;
 }
 }
 
