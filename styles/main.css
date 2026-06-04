@@ -13,8 +13,13 @@ body {
     background-color: white;
     padding: 0;
     display: grid;
-	grid-template-columns: repeat(12, fr);
-	grid-template-rows: auto auto auto auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "footer";
 }
 
 
@@ -32,11 +37,11 @@ a {
 }
 
 /* Header */
-header {              
-    grid-column: 1 / 13;
-	grid-row: 1 / 2;                         
+header {                            
+    grid-area: header;
+   /* grid-column: 1 / 13;
+	grid-row: 1 / 2;    */                     
     background: linear-gradient(rgb(28, 50, 146), white);
-    /*background-color: steelblue;*/
     border-bottom: 3px solid rgb(28, 50, 146);
     padding: 2.2%;
 }
@@ -47,7 +52,7 @@ header img {
 }
 
 header h1 {
-    font-style: italic;
+  /*  font-style: italic;*/
     color:white;
     font-size: 200%;
     padding: 0;
@@ -70,8 +75,9 @@ blockquote{
 
 /* the styles for the nav*/
 nav {
-    grid-column: 1 / 13;
-	grid-row: 2 / 3;  
+    grid-area: navbar;
+   /* grid-column: 1 / 13;
+	grid-row: 2 / 3;  */
     position: relative;
 	background-color: rgb(28, 50, 146);
 	width: 100%;
@@ -153,8 +159,9 @@ main {
 
 /* section links */
 section {
-    grid-column: 4 / 10;
-	grid-row: 2 / 3;
+    grid-area: section;
+    /*grid-column: 4 / 10;
+	grid-row: 2 / 3;*/
     width: 100%;
     margin: 0.5em;
     line-height: 1.5;
@@ -216,9 +223,10 @@ figure figcaption {
 
 /* Aside */
 aside {
-    /*flex-basis: 25%;*/
+    /*flex-basis: 25%;
     grid-column: 1 / 4;
-	grid-row: 3 / 4;
+	grid-row: 3 / 4;*/
+    grid-area: aside;
     width: 100%;
     margin: 25px 0 0 0;
     border: 3px solid rgb(28, 50, 146);
@@ -262,8 +270,9 @@ aside img {vertical-align: middle;
 }
 /* footer */
 footer {
-    grid-column: 1 / 4;
-	grid-row: 4 / 5;
+    grid-area: footer;
+    /*grid-column: 1 / 4;
+	grid-row: 4 / 5;*/
     background: linear-gradient(white, rgb(28, 50, 146));
     color: white;
     text-align: center;
@@ -350,7 +359,13 @@ input {border-radius: 5px;}
 /* Large-screen media query */
 @media screen and (min-width: 768px) {
 main {
-        grid-template-columns: repeat(12, 1fr);
+    display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 40%;
+        grid-template-areas: "section aside";
+        gap: 5%;
+    }
+       /* grid-template-columns: repeat(12, 1fr);
         column-gap: 2em;
     }
 
@@ -363,7 +378,7 @@ main {
         grid-column: 9 / 13;
         grid-row: 1;
 }
-/*main {
+main {
 flex-direction: row;
 }
 
@@ -380,13 +395,14 @@ aside {
 @media screen and (min-width: 1035px) {
 .menu {
     position: relative;
-    display: flex;
-	flex-wrap: wrap;
+    display: grid;
+    grid-template: auto / repeat(5, 1fr);
+   /* display: flex;
+	flex-wrap: wrap;*/
 	justify-content: space-evenly;
-	list-style-type: none;
 }
 .menu-btn { display: none; }
-#checkbox-toggle:checked ~ .menu { display: flex; }
+#checkbox-toggle:checked ~ .menu { display: grid; }
 
  /*change triangle direction*/
  .menu li:has(.submenu) small::after {
