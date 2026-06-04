@@ -194,11 +194,9 @@ section h3 {
 }
 
 img {
-    img {
      float: left;
     margin: .25em .5em 1em 0;
     width: clamp(150px, 100%, 1300px);
-}
 }
 
 figure {
